@@ -1,0 +1,93 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./src/output.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+</head>
+<body class="bg-black w-screen h-screen overflow-hidden ">
+  <nav class="text-white z-50 top-0  w-full bg-black  mx-auto  ultra:pr-40 laptop:pr-40 slaptop:pr-20 ultra:pl-20 laptop:pl-20 slaptop:pl-20 p-5 mb-5">
+    <div class="flex justify-between items-center">
+     <div><span class="lg:text-[40px] ultra:text-[60px] min-[50px]:text-[30px] uppercase "><h1>zakaria aharrar</h1></span></div>
+     <ul class="lg:flex col-row  lg:space-x-10 lg:text-[25px] min-[50px]:hidden">
+       <li><a href="#">Accueil</a></li>
+       <li><a href="./Biographie.html">Biographie</a></li>
+       <li><a href="./Messervices.html">Mes services</a></li>
+       <li><a href="./Galerie.html">Galerie</a></li>
+       <li><a href="./film.html">Films</a></li>
+       <li><a href="./Contact.html">Contact</a></li>
+     </ul>
+     <ul class="flex col-row space-x-10 text-[25px] lg:hidden min-[50px]:block ">
+       <button><svg viewBox="0 0 24 24" width = '40px' fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M4 18L20 18" stroke="#ffffff" stroke-width="2" stroke-linecap="round"></path> <path d="M4 12L20 12" stroke="#ffffff" stroke-width="2" stroke-linecap="round"></path> <path d="M4 6L20 6" stroke="#ffffff" stroke-width="2" stroke-linecap="round"></path> </g></svg></button>
+     </ul>
+    </div> 
+   </nav>
+  <section id="hero" class="h-screen flex lg:bg-transparent bg-black  min-[50px]:items-center lg:items-start">
+    <div class="overflow-x-hidden flex flex-row px-5 space-x-5 relative justify-center items-start">
+  <!-- Carousel Wrapper -->
+  <div id="videoCarousel" class="relative h-full w-full flex justify-center items-center  overflow-hidden">
+    <!-- Video 1 -->
+    <video id="video1" src="./imges/Hicham El Ouali (online-video-cutter.com).mp4" muted loop class="object-cover w-screen ultra:h-[1100px] 2xl:h-[800px] lg:h-[720px]   min-[50px]:h-[500px] min-[50px]:object-center  lg:object-top ultra:object-top"></video>
+    <!-- Video 2 -->  
+    <video id="video2" src="./imges/Scene Shot.mp4" muted loop class="object-cover w-screen ultra:h-[1100px] 2xl:h-[800px] lg:h-[750px]  min-[50px]:h-[500px] min-[50px]:object-center    lg:object-top ultra:object-top   "></video>
+    
+    <!-- Control Buttons -->
+    <button id="nextButton" class="absolute right-0 top-1/2 transform -translate-y-1/2 p-3  text-white rounded-full hover:scale-125 duration-300"><svg viewBox="0 0 32 32" width = '40px' version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns" fill="#000000" transform="rotate(0)"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>arrow-right-circle</title> <desc>Created with Sketch Beta.</desc> <defs> </defs> <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage"> <g id="Icon-Set" sketch:type="MSLayerGroup" transform="translate(-308.000000, -1087.000000)" fill="#ffffff"> <path d="M324,1117 C316.268,1117 310,1110.73 310,1103 C310,1095.27 316.268,1089 324,1089 C331.732,1089 338,1095.27 338,1103 C338,1110.73 331.732,1117 324,1117 L324,1117 Z M324,1087 C315.163,1087 308,1094.16 308,1103 C308,1111.84 315.163,1119 324,1119 C332.837,1119 340,1111.84 340,1103 C340,1094.16 332.837,1087 324,1087 L324,1087 Z M330.535,1102.12 L324.879,1096.46 C324.488,1096.07 323.855,1096.07 323.465,1096.46 C323.074,1096.86 323.074,1097.49 323.465,1097.88 L327.586,1102 L317,1102 C316.447,1102 316,1102.45 316,1103 C316,1103.55 316.447,1104 317,1104 L327.586,1104 L323.465,1108.12 C323.074,1108.51 323.074,1109.15 323.465,1109.54 C323.855,1109.93 324.488,1109.93 324.879,1109.54 L330.535,1103.88 C330.775,1103.64 330.85,1103.31 330.795,1103 C330.85,1102.69 330.775,1102.36 330.535,1102.12 L330.535,1102.12 Z" id="arrow-right-circle" sketch:type="MSShapeGroup"> </path> </g> </g> </g></svg></button>
+    <button id="prevButton" class="absolute left-0 top-1/2 transform -translate-y-1/2  p-3 text-white rounded-full hover:scale-125 duration-300"><svg viewBox="0 0 32 32" width = '40px' version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns" fill="#000000" transform="rotate(180)"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>arrow-right-circle</title> <desc>Created with Sketch Beta.</desc> <defs> </defs> <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage"> <g id="Icon-Set" sketch:type="MSLayerGroup" transform="translate(-308.000000, -1087.000000)" fill="#ffffff"> <path d="M324,1117 C316.268,1117 310,1110.73 310,1103 C310,1095.27 316.268,1089 324,1089 C331.732,1089 338,1095.27 338,1103 C338,1110.73 331.732,1117 324,1117 L324,1117 Z M324,1087 C315.163,1087 308,1094.16 308,1103 C308,1111.84 315.163,1119 324,1119 C332.837,1119 340,1111.84 340,1103 C340,1094.16 332.837,1087 324,1087 L324,1087 Z M330.535,1102.12 L324.879,1096.46 C324.488,1096.07 323.855,1096.07 323.465,1096.46 C323.074,1096.86 323.074,1097.49 323.465,1097.88 L327.586,1102 L317,1102 C316.447,1102 316,1102.45 316,1103 C316,1103.55 316.447,1104 317,1104 L327.586,1104 L323.465,1108.12 C323.074,1108.51 323.074,1109.15 323.465,1109.54 C323.855,1109.93 324.488,1109.93 324.879,1109.54 L330.535,1103.88 C330.775,1103.64 330.85,1103.31 330.795,1103 C330.85,1102.69 330.775,1102.36 330.535,1102.12 L330.535,1102.12 Z" id="arrow-right-circle" sketch:type="MSShapeGroup"> </path> </g> </g> </g></svg></button>
+  </div>
+  
+</div>
+  <a href=""><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path fill-rule="evenodd" clip-rule="evenodd" d="M9.49614 7.13176C9.18664 6.9549 8.80639 6.95617 8.49807 7.13509C8.18976 7.31401 8 7.64353 8 8V16C8 16.3565 8.18976 16.686 8.49807 16.8649C8.80639 17.0438 9.18664 17.0451 9.49614 16.8682L16.4961 12.8682C16.8077 12.6902 17 12.3589 17 12C17 11.6411 16.8077 11.3098 16.4961 11.1318L9.49614 7.13176ZM13.9844 12L10 14.2768V9.72318L13.9844 12Z" fill="#ffffff"></path> <path fill-rule="evenodd" clip-rule="evenodd" d="M0 12C0 8.25027 0 6.3754 0.954915 5.06107C1.26331 4.6366 1.6366 4.26331 2.06107 3.95491C3.3754 3 5.25027 3 9 3H15C18.7497 3 20.6246 3 21.9389 3.95491C22.3634 4.26331 22.7367 4.6366 23.0451 5.06107C24 6.3754 24 8.25027 24 12C24 15.7497 24 17.6246 23.0451 18.9389C22.7367 19.3634 22.3634 19.7367 21.9389 20.0451C20.6246 21 18.7497 21 15 21H9C5.25027 21 3.3754 21 2.06107 20.0451C1.6366 19.7367 1.26331 19.3634 0.954915 18.9389C0 17.6246 0 15.7497 0 12ZM9 5H15C16.9194 5 18.1983 5.00275 19.1673 5.10773C20.0989 5.20866 20.504 5.38448 20.7634 5.57295C21.018 5.75799 21.242 5.98196 21.4271 6.23664C21.6155 6.49605 21.7913 6.90113 21.8923 7.83269C21.9973 8.80167 22 10.0806 22 12C22 13.9194 21.9973 15.1983 21.8923 16.1673C21.7913 17.0989 21.6155 17.504 21.4271 17.7634C21.242 18.018 21.018 18.242 20.7634 18.4271C20.504 18.6155 20.0989 18.7913 19.1673 18.8923C18.1983 18.9973 16.9194 19 15 19H9C7.08058 19 5.80167 18.9973 4.83269 18.8923C3.90113 18.7913 3.49605 18.6155 3.23664 18.4271C2.98196 18.242 2.75799 18.018 2.57295 17.7634C2.38448 17.504 2.20866 17.0989 2.10773 16.1673C2.00275 15.1983 2 13.9194 2 12C2 10.0806 2.00275 8.80167 2.10773 7.83269C2.20866 6.90113 2.38448 6.49605 2.57295 6.23664C2.75799 5.98196 2.98196 5.75799 3.23664 5.57295C3.49605 5.38448 3.90113 5.20866 4.83269 5.10773C5.80167 5.00275 7.08058 5 9 5Z" fill="#ffffff"></path> </g></svg></a>
+  </section>
+</body>
+</html>
+
+
+
+
+
+<script>
+  // Get references to the videos and buttons
+const video1 = document.getElementById('video1');
+const video2 = document.getElementById('video2');
+const prevButton = document.getElementById('prevButton');
+const nextButton = document.getElementById('nextButton');
+
+// Initially, show video1 and hide video2
+video1.classList.remove('hidden');
+video2.classList.add('hidden');
+video1.play(); // Play the first video
+
+// Function to show the previous video
+prevButton.addEventListener('click', () => {
+  // Apply sliding animation from left
+  video1.classList.remove('hidden');
+  video1.classList.add('slide-in-right');
+  
+  // Hide video2 with a slide-out effect
+  video2.classList.remove('slide-in-left');
+  video2.classList.add('hidden');
+
+  video1.currentTime = 0; // Reset the video to the start
+  video1.play(); // Play video1
+});
+
+// Function to show the next video
+nextButton.addEventListener('click', () => {
+  // Apply sliding animation from right
+  video2.classList.remove('hidden');
+  video2.classList.add('slide-in-left');
+  
+  // Hide video1 with a slide-out effect
+  video1.classList.remove('slide-in-right');
+  video1.classList.add('hidden');
+
+  video2.currentTime = 0; // Reset the video to the start
+  video2.play(); // Play video2
+});
+
+</script>
+

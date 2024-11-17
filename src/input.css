@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+
+
+
+h1,a,li,span{
+    font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  }
+
+  h2{
+    font-family: "Funnel Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300px;
+  font-style: normal;
+  }
+
+
+  h3{
+    font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  }
+ 
+    
+
+
+  /* Make sure the videos are positioned correctly */
+
+  
+  
+  
+  /* Sliding effect for video transitions */
+.slide-in-left {
+    animation: slideInLeft 0.5s ease-in-out;
+  }
+  
+  .slide-in-right {
+    animation: slideInRight 0.5s ease-in-out;
+  }
+  
+  @keyframes slideInLeft {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes slideInRight {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  
